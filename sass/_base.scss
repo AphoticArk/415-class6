@@ -9,7 +9,12 @@ body {
 .point {
      margin-bottom: 5vw;
      display: inline-flex;
+     transform: rotate(60deg);
 }
 .wheel {
      display: inline;
+}
+form {
+     margin: 3vw 0 0 5vw;
+
 }
