@@ -7,14 +7,17 @@ body {
 //      text-align: center;
 // }
 .point {
-     margin-bottom: 5vw;
+     margin-bottom: 2vw;
      display: inline-flex;
      transform: rotate(60deg);
 }
 .wheel {
      display: inline;
 }
-form {
-     margin: 3vw 0 0 5vw;
+button {
+     display: block;
+     justify-content: center;
+     margin-top: 2vw;
+     margin-left: 50%;
 
 }
