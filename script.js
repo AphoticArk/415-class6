@@ -3,7 +3,7 @@ console.log("testing");
 console.log("working");
 
 // Variable Declaration
-let amountRotate;
+let amountRotate, spin;
 
 let button = document.querySelector('.button');
 
@@ -18,11 +18,14 @@ function randomInteger(min, max) {
 function spinWheel() {
      console.log("spin");
 
+     spin = Number(wheel.dataset.spin);
+
      amountRotate = randomInteger(1800, 2160);
+     amountRotate += spin;
      console.log(amountRotate);
 
-     for (let i = 0; i < amountRotate; i++) {
-          wheel.style.transform = "rotate(1deg)";
-          // setTimeout( () => wheel, 1000);
-     }
+     wheel.dataset.spin = amountRotate;
+
+     wheel.style.transform = "rotate(" + amountRotate + "deg)";
+
 }

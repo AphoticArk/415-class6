@@ -13,6 +13,7 @@ body {
 }
 .wheel {
      display: inline;
+     transition: all 1s cubic-bezier(.52,0,.25,1);
 }
 button {
      display: block;
